@@ -39,17 +39,19 @@ url("fonts/linea-basic-10.ttf")
         margin-bottom:1.5rem !important
     }
     .u-margin-bottom-medium{margin-bottom:4rem !important}@media only screen and (max-width: 56.25em){.u-margin-bottom-medium{margin-bottom:3rem !important}}.u-margin-bottom-big{margin-bottom:8rem !important}@media only screen and (max-width: 56.25em){.u-margin-bottom-big{margin-bottom:5rem !important}}.u-margin-top-big{margin-top:8rem !important}.u-margin-top-huge{margin-top:10rem !important}.btn,.btn:link,.btn:visited{text-transform:uppercase;text-decoration:none;padding:15px 40px;display:inline-block;border-radius:100px;transition:transform 0.2s;position:relative;font-size:1.6rem;border:none;cursor:pointer}.btn:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,0.2)}.btn:active,.btn:focus{outline:none;transform:translateY(-1px);box-shadow:0 5px 10px rgba(0,0,0,0.2)}.btn--white{background-color:#fff;color:#777}.btn--green{background-color:#ff4500;color:#fff}.btn::after{content:'';display:inline-block;height:100%;width:100%;border-radius:100px;position:absolute;top:0;left:0;z-index:-1;transition:all 0.2s}.btn--animated{-webkit-animation:moveInBottom 0.7s ease-out 0.5s backwards;animation:moveInBottom 0.7s ease-out 0.5s backwards}.btn-text:link,.btn-text:visited{font-size:1.6rem;color:#ff4500;display:inline-block;text-decoration:none;border-bottom:1px solid #ff4500;padding:3px;transition:all .2s}.btn-text:hover{background-color:#ff4500;color:#fff;box-shadow:0 1rem 2rem rgba(0,0,0,0.2);transform:translateY(-2px)}.btn-text:active{box-shadow:0 0.5rem 1rem rgba(0,0,0,0.2);transform:translateY(0)}
-    .composition{position:relative}
+    .composition{
+        position:relative
+    }
     .composition__photo{
-        width:55%;
+        width:100%;
         box-shadow:0 1.5rem 4rem rgba(0,0,0,0.4);
         border-radius:2px;
         position:absolute;
         z-index:2;
         transition:all 0.2s;outline-offset:1rem
     }@media only screen and (max-width: 56.25em){
-        .composition__photo{f
-            loat:left;
+        .composition__photo{
+            float:left;
             position:relative;
             width:33.3333%;
             box-shadow:0 1.5rem 3rem rgba(0,0,0,0.2)}}
@@ -188,10 +190,15 @@ url("fonts/linea-basic-10.ttf")
      padding-bottom: 5rem;
      box-shadow:0 3rem 6rem rgba(0,0,0,0.15);
      border-bottom: 1rem solid #ff4500;
+     
  }
-
+#albertoPic{
+    float: left;
+    width:30%;
+    margin-right: 3%;
+    margin-top: 6%;
+}
 .alberto-intro{
-    margin-left: 30%;
     font-size: 700;
     transform:skewY(2deg);
     margin-top: 7rem;
@@ -200,7 +207,12 @@ url("fonts/linea-basic-10.ttf")
     margin-right: 6%;
     background-color:rgba(255,255,255,0.6);
 }
-
+@media only screen and (max-width: 56.25em){
+        .alberto-intro{
+            width:100%;
+            padding:2rem;
+            padding-left:7rem;transform:skewX(0)}
+        }
 .alberto-process{
     width: 30%;
     font-size: 700;
@@ -208,6 +220,12 @@ url("fonts/linea-basic-10.ttf")
     margin-top: 7rem;
 float: left;
 }
+@media only screen and (max-width: 56.25em){
+    .alberto-process{
+        width:100%;
+        padding:2rem;
+        padding-left:7rem;transform:skewX(0)}
+    }
 .section-caltex{
     transform:skewY(-2deg);
     margin-top: -1px;
